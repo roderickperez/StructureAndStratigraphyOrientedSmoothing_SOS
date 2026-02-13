@@ -1,0 +1,16 @@
+[project]
+name = "structureandstratigraphyorientedsmoothing-sos"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "marimo>=0.19.11",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "pandas>=3.0.0",
+    "scipy>=1.17.0",
+    "segyio>=1.9.14",
+    "torch>=2.10.0",
+    "tqdm>=4.67.3",
+]
