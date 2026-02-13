@@ -32,7 +32,31 @@ To run a modern Python version of this code with GPU acceleration (specifically 
 - `matplotlib`: For visualization.
 - `segyio`: For handling SEG-Y seismic data formats.
 
-Refer to the `pyproject.toml` or the `uv` environment setup for a complete list of dependencies.
+### Python Environment Setup
+If you are using `uv`, you can set up and activate the environment as follows:
+
+1. **Install uv** (if not already installed):
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+2. **Initialize and Install dependencies**:
+   Run this in the project root to create a `.venv` and install all required libraries:
+   ```bash
+   uv sync
+   ```
+
+3. **Activate the environment**:
+   ```bash
+   source .venv/bin/activate
+   ```
+
+4. **Run interactive notebooks** (Marimo):
+   ```bash
+   uv run marimo edit
+   ```
+
+Refer to the `pyproject.toml` for a complete list of dependencies.
 
 ## Citation
 If you find this work helpful in your research, please cite:
